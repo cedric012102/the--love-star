@@ -83,7 +83,8 @@ export const styles = StyleSheet.create({
         flex: 1
     },
     containerImage: {
-        flex: 1/3
+        width: "32%",
+        marginHorizontal: 4
     },
     image: {
         flex: 1,
