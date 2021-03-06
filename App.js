@@ -1,5 +1,6 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
 import ChatListPage from './src/pages/chat-list-page';
 import LoginPage from './src/pages/login-page';
 import SplashPage from './src/pages/splash-page';
@@ -11,7 +12,6 @@ import OnboardingTwoPage from './src/pages/onboarding-two-page';
 import OnboardingThreePage from './src/pages/onboarding-three-page';
 import OnboardingFourPage from './src/pages/onboarding-four-page';
 import NewProfilePage from './src/pages/new-profile-page';
-import UploadPage from './src/pages/upload-page';
 import UploadPageTwo from './src/pages/upload-two-page';
 import HomePage from './src/pages/home-page';
 
@@ -22,19 +22,19 @@ const navigator = createStackNavigator(
     Splash: SplashPage,
     ChatRoom: ChatRoomPage,
     ChatInfo: ChatInfoPage,
-    Profile: ProfilePage,
+    Profile: createBottomTabNavigator({
+      Home: HomePage,
+      Profile: ProfilePage,
+      UploadTwo: UploadPageTwo,
+    }),
     OnboardingOne: OnboardingOnePage,
     OnboardingTwo: OnboardingTwoPage,
     OnboardingThree: OnboardingThreePage,
     OnboardingFour: OnboardingFourPage,
-    NewProfile: NewProfilePage,
-    Upload: UploadPage,
-    UploadTwo: UploadPageTwo,
-    Home: HomePage,
-   
+    NewProfile: NewProfilePage, 
   },
   {
-    initialRouteName: "Login",
+    initialRouteName: "Profile",
     defaultNavigationOptions: {
       title: "Love Star"
     }
