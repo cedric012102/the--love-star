@@ -1,49 +1,38 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { styles } from './styles/chat-list-style';
-import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome, Ionicons } from '@expo/vector-icons';
+import  ChatRoomItem  from './chat-room-item';
 
 export function ChatList() {
     return (
         <View style={styles.backgroundChat}>
             <View style={styles.headerContainer}>
-                <Text style={styles.headerText}>Open Chat Rooms</Text>
-                <FontAwesome name="hand-o-down" size={24} color="black" />
+                <TouchableOpacity>
+                    <Text>Home<Ionicons name="arrow-back" size={24} color="black" /></Text>
+                </TouchableOpacity>
+                    <Text style={styles.headerText}>Open Chat Rooms</Text>
             </View>
+
             <View style={styles.enterChatContainer}>
-                <Text style={styles.enterChatText}>Enter Chat Room</Text>
+                <Text style={styles.enterChatText}>Enter a Chat Room</Text>
+                <FontAwesome name="hand-o-down" size={24} color="rgb(210, 210, 210)" />
             </View>
-            <View style={styles.chatSelectionContainer}>
-                    <Text style={styles.chatSelectionText}>90s Era</Text>
-            </View>
-            <View style={styles.chatSelectionContainer}>
-                    <Text style={styles.chatSelectionText}>Vegans Rock</Text>
-            </View>
-            <View style={styles.chatSelectionContainer}>
-                    <Text style={styles.chatSelectionText}>In my 20s</Text>
-            </View>
-            <View style={styles.chatSelectionContainer}>
-                    <Text style={styles.chatSelectionText}>30 and Grown</Text>
-            </View>
-            <View style={styles.chatSelectionContainer}>
-                    <Text style={styles.chatSelectionText}>50 and Up</Text>
-            </View>
-            <View style={styles.chatSelectionContainer}>
-                    <Text style={styles.chatSelectionText}>Lets Talk Sports</Text>
-            </View>
-            <View style={styles.chatSelectionContainer}>
-                    <Text style={styles.chatSelectionText}>Entrepreneurs</Text>
-            </View>
-            <View style={styles.chatSelectionContainer}>
-                    <Text style={styles.chatSelectionText}>40s Club</Text>
-            </View>
-            <View style={styles.chatSelectionContainer}>
-                    <Text style={styles.chatSelectionText}>Early 90s and 2000s sitcoms</Text>
-            </View>
-            <View style={styles.chatSelectionContainer}>
-                    <Text style={styles.chatSelectionText}>Music Lovers</Text>
-            </View>
+
+            <ChatRoomItem label='90s Era'/>
+            <ChatRoomItem label='Vegans Rock'/>
+            <ChatRoomItem label='In my 20s'/>
+            <ChatRoomItem label='30 and Grown'/>
+            <ChatRoomItem label='40s club'/>
+            <ChatRoomItem label='50 and Up'/>
+            <ChatRoomItem label='Lets Talk Sports'/>
+            <ChatRoomItem label='Entrepreneurs'/>
+            <ChatRoomItem label='90s and 2000s sitcoms'/>
+            <ChatRoomItem label='Music Lovers'/>
+            
         </View>
     );
 }
+
+
 
