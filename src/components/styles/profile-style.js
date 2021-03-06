@@ -36,23 +36,24 @@ export const styles = StyleSheet.create({
         marginLeft: 59,
         marginTop: 22,
         marginRight: 45,
-        bottom: 46
     },
     chatLinkText: {
         color: 'blue',
         textAlign: 'left',
         letterSpacing: 0.0,
         fontSize: 18,
-        top: 23,
-        right: 291
+    },
+    followerTextContainer: {
+        flexDirection: "row",
+        alignItems: "center",
+        marginLeft: 12,
+        marginTop: 12,
     },
     followersText: {
         color: "rgb(71, 71, 71)",
         letterSpacing: 0.0,
         fontSize: 14,
         fontWeight: 'bold',
-        top: 22,
-        left: 30
     },
     profileContainer: {
         alignItems: 'center'
@@ -63,21 +64,16 @@ export const styles = StyleSheet.create({
         fontSize: 16,
         textAlign: "center",
         fontWeight: "bold",
-        top: 39
     },
     profileIcon: {
         width: 200, 
         height: 200, 
         borderRadius: 475,
         backgroundColor: 'rgb(196, 196, 196)',
-        top: 100
+        marginVertical: 32
     },
     container: {
         flex: 1,
-        marginTop: 40
-    },
-    containerInfo: {
-        margin: 20
     },
     containerGallery: {
         flex: 1
