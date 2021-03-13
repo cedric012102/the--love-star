@@ -13,17 +13,18 @@ const styles = StyleSheet.create({
   },
   elephantImage: {
   paddingVertical: 15,
-  marginTop: 4,
+  marginTop: 2,
   },
   titleContainer: {
     alignSelf: 'center',
   },
   title: {
     textAlign: 'center',
-    color: 'black',
+    color: 'silver',
     fontSize: 75,
     fontWeight: '600',
-    top: 20,
+    marginBottom: 20,
+    fontFamily: 'Baskerville-Italic',
     shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -41,19 +42,19 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     borderRadius: 15,
     paddingVertical: 22,
-    paddingHorizontal: 26,
+    paddingHorizontal: 35,
     marginVertical: 12,
     flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-evenly'
+    justifyContent: 'flex-start',
   },
   buttonText: {
     fontSize: 18,
     color: 'black',
+    paddingHorizontal: 50,
   },
   mediaIcons: {
-    height: 20,
-    width: 20,
+   alignSelf: "flex-end"
+  
   }
 });
 

@@ -6,37 +6,8 @@ export const styles = StyleSheet.create({
         width: '100%',
         backgroundColor: 'rgb(245, 221, 221)',
         paddingHorizontal: 11,
-        
     },
-    headerContainer: {
-        backgroundColor: "rgb(221, 244, 244)",
-        width: 420,
-        height: 113,
-        paddingVertical: 25,
-        paddingHorizontal: 16,
-        alignItems: 'flex-end',
-        right: 14,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 4,
-        },
-        shadowOpacity: 0.30,
-        shadowRadius: 4.65,
-        
-        elevation: 8,
-    },
-    headerText: {
-        fontSize: 24,
-        fontWeight: "bold",
-        textAlign: "center",
-        letterSpacing: 0.0,
-        width: 297,
-        height: 66,
-        marginLeft: 59,
-        marginTop: 22,
-        marginRight: 45,
-    },
+
     chatLinkText: {
         color: 'blue',
         textAlign: 'left',
@@ -48,6 +19,7 @@ export const styles = StyleSheet.create({
         alignItems: "center",
         marginLeft: 12,
         marginTop: 12,
+        marginVertical: 20
     },
     followersText: {
         color: "rgb(71, 71, 71)",
@@ -69,14 +41,28 @@ export const styles = StyleSheet.create({
         width: 200, 
         height: 200, 
         borderRadius: 475,
-        backgroundColor: 'white',
-        marginVertical: 32
+        backgroundColor: 'rgb(196, 196, 196)',
+        marginVertical: 35
+    },
+    followButton: {
+        borderRadius: 15,
+        backgroundColor: "rgb(221, 244, 244)",
+        paddingVertical: 15,
+        paddingHorizontal: 36,
+        marginVertical: 27,
+        alignSelf: "flex-end"
+    },
+    followButtonText: {
+        fontSize: 18,
+        color: "white",
+        letterSpacing: 0.0,
+        textAlign: 'center'
     },
     container: {
         flex: 1,
     },
     containerGallery: {
-        flex: 1
+        flex: 1,
     },
     containerImage: {
         width: "32%",
@@ -86,5 +72,6 @@ export const styles = StyleSheet.create({
     image: {
         flex: 1,
         aspectRatio: 1/1,
+        borderRadius: 8
     },
 });

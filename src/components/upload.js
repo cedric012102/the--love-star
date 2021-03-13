@@ -5,9 +5,6 @@ import {styles} from './styles/upload-style.js'
 export function Upload() {
   return (
     <View style={styles.backgroundUpload}>
-    <View style={styles.headerContainer}>
-      <Text style={styles.headerText}>Upload</Text>
-    </View>
       <View style={styles.uploadContainer}>
           <View style={styles.dividerLine}></View>
           <Text style={styles.uploadMainText}>Photos</Text>

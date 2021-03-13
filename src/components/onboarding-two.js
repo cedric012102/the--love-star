@@ -8,9 +8,7 @@ import { Entypo } from '@expo/vector-icons';
 export function OnboardingTwo() {
   return (
     <View style={styles.backgroundOnboarding}>
-    <View style={styles.headerContainer}>
-        <Text style={styles.headerText}>Registration</Text>
-    </View>
+ 
     
     <View style={styles.onboardingContainer}>
             <Text style={styles.mainText}>Whats In Here?</Text>

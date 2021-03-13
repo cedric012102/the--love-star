@@ -7,9 +7,7 @@ import { Ionicons } from '@expo/vector-icons';
 export function OnboardingThree() {
   return (
     <View style={styles.backgroundOnboarding}>
-      <View style={styles.headerContainer}>
-          <Text style={styles.headerText}>Registration</Text>
-      </View>
+      
       <View style={styles.onboardingContainer}>
           <Ionicons name="notifications-circle-outline" size={123} color="rgb(221, 244, 244)" />
           <Text style={styles.mainText}>Allow Notifications</Text>
