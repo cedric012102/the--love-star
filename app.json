@@ -5,6 +5,7 @@
     "version": "40.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "facebookScheme": "fb361404388737946",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -17,13 +18,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cedric.lovestar",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.156884841393-8p0rjlkv0137jm159oq2ecr34d296dki"
+        }
+      },
+      "googleServicesFile": "./GoogleService-Info-2.plist"
+    
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.cedric.lovestar"
+     
     },
     "web": {
       "favicon": "./assets/favicon.png"

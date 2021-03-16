@@ -6,9 +6,6 @@ import { Pins } from 'react-native-pins';
 export function OnboardingOne() {
     return (
         <View style={styles.backgroundOnboarding}>
-            <View style={styles.headerContainer}>
-                <Text style={styles.headerText}>Registration</Text>
-            </View>
             <View style={styles.onboardingContainer}>
                 <Image source={require('../img/elephantImage.png')} style={styles.elephantImage} />
                 <Text style={styles.mainText}>Welcome To Love Star</Text>

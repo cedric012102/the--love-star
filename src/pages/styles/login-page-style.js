@@ -38,24 +38,7 @@ const styles = StyleSheet.create({
   buttonAreaContainer: {
     top: 54,
   },
-  buttonContainer: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 15,
-    paddingVertical: 22,
-    paddingHorizontal: 35,
-    marginVertical: 12,
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-  },
-  buttonText: {
-    fontSize: 18,
-    color: 'black',
-    paddingHorizontal: 50,
-  },
-  mediaIcons: {
-   alignSelf: "flex-end"
   
-  }
 });
 
 export default styles;
