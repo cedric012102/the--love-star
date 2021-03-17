@@ -1,11 +1,12 @@
 import React from 'react'
-import {View, Text} from 'react-native'
+import {View, Text, TouchableOpacity} from 'react-native'
 import {styles} from './styles/onboarding-two-style.js'
-import { Pins } from 'react-native-pins';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 export function OnboardingTwo() {
+  const navigation = useNavigation(); 
   return (
     <View style={styles.backgroundOnboarding}>
  
@@ -46,13 +47,11 @@ export function OnboardingTwo() {
             <Text style={styles.subText}>Star Status</Text>
             <Text style={styles.subSubText}>Star Status is determined by your amount of followers. 100 followers = a red star. 1000 followers = a purple star. 5000 or more followers = a blue star.</Text>
     </View>
-            
-            <Pins
-            numberOfPins={3}
-            numberOfPinsActive={3}
-            numberOfPinsMaximum={3}
-            activeOnly
-            />
+            <TouchableOpacity onPress={() => navigation.navigate('OnboardingThree')}>
+                <View style={styles.buttonContainer}>
+                <Text style={styles.buttonContainerText}>Continue</Text>
+            </View>
+            </TouchableOpacity>
  </View>
   )
 }

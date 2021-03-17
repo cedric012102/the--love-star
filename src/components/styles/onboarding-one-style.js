@@ -57,4 +57,18 @@ export const styles = StyleSheet.create({
             textAlign: 'center',
             paddingHorizontal: 50,
         },
+        buttonContainer: {
+            backgroundColor: 'rgb(221, 244, 244)',
+            borderRadius: 25,
+            paddingVertical: 25,
+            paddingHorizontal: 36,
+            marginVertical: 300,
+            marginHorizontal: 36,
+            alignItems: 'center',
+        },
+        buttonContainerText: {
+            fontSize: 20,
+            textAlign: "center",
+            letterSpacing: 0.0,
+         }
 });

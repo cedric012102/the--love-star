@@ -11,9 +11,13 @@ export const styles = StyleSheet.create({
         marginHorizontal: 137,
         height: 124,
         width: 138,
+        marginTop: 45
     },
     titleText: {
         fontSize: 80,
+        fontFamily: 'Baskerville-Italic',
+        fontWeight: 'bold',
+        color: 'silver',
         textAlign: "center",
         letterSpacing: 0.0,
         paddingVertical: 65,

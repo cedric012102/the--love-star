@@ -3,8 +3,10 @@ import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { styles } from './styles/splash-style';
 import { Entypo } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 export function Splash() {
+    const navigation = useNavigation(); 
     return (
         <View style={styles.backgroundSplash}>
             <View>
@@ -16,7 +18,7 @@ export function Splash() {
                 <AntDesign name="heart" style={styles.heartIcon}/>
                 </View>
             </View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
                 <View style={styles.buttonContainer}>
                 <Text style={styles.buttonContainerText}>Get Started</Text>
             </View>

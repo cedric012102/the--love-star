@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect }from 'react';
 import { OnboardingThree } from '../components/onboarding-three';
 
-const OnboardingThreePage = () => {
+const OnboardingThreePage = ({ navigation }) => {
+    useEffect(() => {
+        navigation.setOptions({
+           title: 'Registration',
+        })
+       }, []);
     return (
        <OnboardingThree/>
         );

@@ -46,7 +46,7 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     subText: {
-        fontSize: 14,
+        fontSize: 16,
         letterSpacing: 0.0,
         textAlign: 'center',
         paddingHorizontal: 106,
@@ -58,7 +58,7 @@ export const styles = StyleSheet.create({
         bottom: 105
     },
     bottomText: {
-        fontSize: 16,
+        fontSize: 26,
         textAlign: 'center',
         letterSpacing: 0.0,
         bottom: 59

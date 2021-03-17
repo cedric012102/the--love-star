@@ -35,7 +35,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator 
-      initialRouteName='Login'
+      initialRouteName='Splash'
       screenOptions={{
         title: "Love Star",
       headerTintColor: 'black',
@@ -45,14 +45,14 @@ export default function App() {
       }}
       >
         <Stack.Screen name="Login" component={LoginPage} />
-        <Stack.Screen name="Splash" component={SplashPage} />
+        <Stack.Screen name="Splash" component={SplashPage} options={{ headerShown: false }} />
         <Stack.Screen name="Home" component={HomePage} />
         <Stack.Screen name="Profile" component={ProfilePage} />
         <Stack.Screen name="OnboardingOne" component={OnboardingOnePage} options={{headerLeft: null}}/>
         <Stack.Screen name="OnboardingTwo" component={OnboardingTwoPage} options={{headerLeft: null}}/>
-        <Stack.Screen name="OnboardingThree" component={OnboardingThreePage} />
-        <Stack.Screen name="OnboardingFour" component={OnboardingFourPage} />
-        <Stack.Screen name="NewProfile" component={NewProfilePage} />
+        <Stack.Screen name="OnboardingThree" component={OnboardingThreePage} options={{headerLeft: null}}/>
+        <Stack.Screen name="OnboardingFour" component={OnboardingFourPage} options={{headerLeft: null}}/>
+        <Stack.Screen name="NewProfile" component={NewProfilePage} options={{headerLeft: null}}/>
         <Stack.Screen name="Upload" component={UploadPage} />
         <Stack.Screen name="UploadTwo" component={UploadPageTwo} />
       </Stack.Navigator>

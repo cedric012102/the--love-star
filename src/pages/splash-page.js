@@ -5,7 +5,7 @@ const SplashPage = () => {
     return (
     
    
-        <Splash/>
+        <Splash />
  
     );
 };

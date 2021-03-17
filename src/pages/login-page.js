@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ImageBackground, SafeAreaView, Image, Alert, Button } from 'react-native';
+import { View, Text, ImageBackground, SafeAreaView, Image, Alert } from 'react-native';
 import styles from './styles/login-page-style';
 import { PrimaryButton } from '../components/primary-button';
 import * as Google from 'expo-google-app-auth';
