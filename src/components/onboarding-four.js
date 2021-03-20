@@ -2,12 +2,11 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { styles } from "./styles/onboarding-four-style.js";
 import { AntDesign } from "@expo/vector-icons";
-import { useNavigation } from "@react-navigation/native";
+import { ScrollView } from "react-native-gesture-handler";
 
-export function OnboardingFour() {
-  const navigation = useNavigation();
+export function OnboardingFour({ navigation }) {
   return (
-    <View style={styles.backgroundOnboarding}>
+    <ScrollView style={styles.backgroundOnboarding}>
       <View style={styles.onboardingContainer}>
         <AntDesign name="checkcircle" size={74.4} color="rgb(221, 244, 244)" />
         <Text style={styles.mainText}>Your account has now been created!</Text>
@@ -24,6 +23,6 @@ export function OnboardingFour() {
           </View>
         </TouchableOpacity>
       </View>
-    </View>
+    </ScrollView>
   );
 }

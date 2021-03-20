@@ -6,6 +6,9 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "facebookScheme": "fb361404388737946",
+    "facebookAppId": "361404388737946",
+    "facebookDisplayName": "love star",
+    "facebookAutoInitEnabled": "true",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",

@@ -5,11 +5,12 @@ import { FontAwesome5 } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { Pins } from "react-native-pins";
+import { ScrollView } from "react-native-gesture-handler";
 
 export function OnboardingTwo() {
   const navigation = useNavigation();
   return (
-    <View style={styles.backgroundOnboarding}>
+    <ScrollView style={styles.backgroundOnboarding}>
       <View style={styles.onboardingContainer}>
         <Text style={styles.mainText}>Whats In Here?</Text>
         <View style={styles.iconContainer}>
@@ -68,7 +69,7 @@ export function OnboardingTwo() {
         </Text>
 
         <TouchableOpacity
-          onPress={() => navigation.navigate("OnboardingThree")}
+          onPress={() => navigation.navigate("OnboardingFour")}
         >
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonContainerText}>Continue</Text>
@@ -81,6 +82,6 @@ export function OnboardingTwo() {
           activeOnly
         />
       </View>
-    </View>
+    </ScrollView>
   );
 }

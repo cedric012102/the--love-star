@@ -1,7 +1,9 @@
+import "./src/index";
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import LoginPage from "./src/pages/login-page";
+import * as firebase from 'firebase';
 import SplashPage from "./src/pages/splash-page";
 import ProfilePage from "./src/pages/profile-page";
 import OnboardingOnePage from "./src/pages/onboarding-one-page";
@@ -17,10 +19,13 @@ import CameraUploadPage from "./src/pages/camera-upload-page";
 const Stack = createStackNavigator();
 
 export default function App() {
+  const user = firebase.auth().currentUser;
+  const isLoggedIn = user !== null;
+
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Splash"
+        initialRouteName={isLoggedIn ? "Profile" : "Splash"}
         screenOptions={{
           title: "Love Star",
           headerTintColor: "black",

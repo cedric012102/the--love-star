@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity, ScrollView } from "react-native";
 import { styles } from "./styles/splash-style";
 import { Entypo } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
@@ -8,7 +8,7 @@ import { useNavigation } from "@react-navigation/native";
 export function Splash() {
   const navigation = useNavigation();
   return (
-    <View style={styles.backgroundSplash}>
+    <ScrollView style={styles.backgroundSplash}>
       <View>
         <Image
           source={require("../img/elephantImage.png")}
@@ -29,6 +29,6 @@ export function Splash() {
           <Text style={styles.buttonContainerText}>Get Started</Text>
         </View>
       </TouchableOpacity>
-    </View>
+    </ScrollView>
   );
 }

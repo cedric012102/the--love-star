@@ -14,13 +14,16 @@ import * as Facebook from "expo-facebook";
 import * as AppleAuthentication from "expo-apple-authentication";
 import * as firebase from "firebase";
 import "firebase/auth";
+import { ScrollView } from "react-native-gesture-handler";
 
 const LoginPage = ({ navigation }) => {
   const backgroundImage = require("../img/test.jpg");
   const elephantImage = require("../img/elephant-background.png");
   return (
+    <ScrollView>
     <ImageBackground source={backgroundImage} style={styles.backgroundImage}>
       <SafeAreaView style={styles.containerStyle}>
+        
         <View style={styles.titleContainer}>
           <Text style={styles.title}>Love Star</Text>
           <Image source={elephantImage} style={styles.elephantImage} />
@@ -47,6 +50,7 @@ const LoginPage = ({ navigation }) => {
         </View>
       </SafeAreaView>
     </ImageBackground>
+    </ScrollView>
   );
 
   async function onGoogleButtonPress() {
@@ -64,7 +68,6 @@ const LoginPage = ({ navigation }) => {
         await firebase.auth().signInWithCredential(credential);
       }
     } catch (e) {
-      console.log(e);
       Alert.alert("Sign in failed");
     }
   }
@@ -78,10 +81,10 @@ const LoginPage = ({ navigation }) => {
         permissions: ["public_profile"],
       });
       if (type === "success") {
-        // Get the user's name using Facebook's Graph API
-        const response = await fetch(
-          `https://graph.facebook.com/me?access_token=${token}`
-        );
+        const credential = firebase.auth.FacebookAuthProvider.credential(token);
+        
+        // Sign in with credential from the Facebook.
+        await firebase.auth().signInWithCredential(credential);
         navigation.navigate("OnboardingOne");
       } else {
         // type === 'cancel'
@@ -99,6 +102,9 @@ const LoginPage = ({ navigation }) => {
           AppleAuthentication.AppleAuthenticationScope.EMAIL,
         ],
       });
+
+      // Sign in with credential from the Apple.
+      await firebase.auth().signInWithCredential(credential);
       navigation.navigate("OnboardingOne");
     } catch (e) {
       if (e.code === "ERR_CANCELED") {
