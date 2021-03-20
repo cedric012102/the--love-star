@@ -1,18 +1,22 @@
-import React from 'react'
-import { Text, TouchableOpacity } from 'react-native';
-import { AntDesign } from '@expo/vector-icons';
-import {styles} from './styles/primary-button-style.js'
+import React from "react";
+import { Text, TouchableOpacity } from "react-native";
+import { AntDesign } from "@expo/vector-icons";
+import { styles } from "./styles/primary-button-style.js";
 
-
-
-  
 export function PrimaryButton({ onPress, label, iconName, iconColor }) {
   return (
     <>
-       <TouchableOpacity style={styles.buttonContainer} onPress={onPress}>
-          {iconName && <AntDesign name={iconName} size={24} color={iconColor} style={styles.mediaIcons}/>}
-  <Text style={styles.buttonText}>{label}</Text>
-            </TouchableOpacity>
+      <TouchableOpacity style={styles.buttonContainer} onPress={onPress}>
+        {iconName && (
+          <AntDesign
+            name={iconName}
+            size={24}
+            color={iconColor}
+            style={styles.mediaIcons}
+          />
+        )}
+        <Text style={styles.buttonText}>{label}</Text>
+      </TouchableOpacity>
     </>
-  )
+  );
 }

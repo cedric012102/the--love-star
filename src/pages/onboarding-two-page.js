@@ -1,15 +1,13 @@
-import React, { useEffect }from 'react';
-import { OnboardingTwo } from '../components/onboarding-two';
+import React, { useEffect } from "react";
+import { OnboardingTwo } from "../components/onboarding-two";
 
 const OnboardingTwoPage = ({ navigation }) => {
-    useEffect(() => {
-        navigation.setOptions({
-           title: 'Registration',
-        })
-       }, []);
-    return (
-       <OnboardingTwo/>
-        );
+  useEffect(() => {
+    navigation.setOptions({
+      title: "Registration",
+    });
+  }, []);
+  return <OnboardingTwo />;
 };
 
 export default OnboardingTwoPage;

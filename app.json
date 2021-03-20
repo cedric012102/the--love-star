@@ -14,9 +14,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.cedric.lovestar",
@@ -26,7 +24,6 @@
         }
       },
       "googleServicesFile": "./GoogleService-Info-2.plist"
-    
     },
     "android": {
       "adaptiveIcon": {
@@ -34,7 +31,6 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.cedric.lovestar"
-     
     },
     "web": {
       "favicon": "./assets/favicon.png"

@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.14.1",
     "@react-native-community/google-signin": "^5.0.0",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-native-google-signin/google-signin": "^6.0.0",
@@ -17,9 +18,11 @@
     "@unimodules/core": "~6.0.0",
     "expo": "^40.0.0",
     "expo-apple-authentication": "~2.2.2",
+    "expo-camera": "~9.1.0",
     "expo-facebook": "~9.1.0",
     "expo-google-app-auth": "^8.1.4",
     "expo-google-sign-in": "^8.4.0",
+    "expo-image-picker": "~9.2.0",
     "expo-notifications": "~0.8.2",
     "expo-status-bar": "~1.0.3",
     "firebase": "7.9.0",
@@ -40,7 +43,7 @@
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
-    "eslint": "^7.20.0",
+    "eslint": "^7.22.0",
     "eslint-plugin-react": "^7.22.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",

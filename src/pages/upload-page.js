@@ -1,11 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import { Upload } from '../components/upload';
+import { Upload } from "../components/upload";
 
 const UploadPage = () => {
-    return (
-       <Upload/>
-   );
+  return <Upload />;
 };
 
 export default UploadPage;

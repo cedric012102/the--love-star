@@ -1,13 +1,8 @@
-import React from 'react';
-import { Splash } from '../components/splash';
+import React from "react";
+import { Splash } from "../components/splash";
 
 const SplashPage = () => {
-    return (
-    
-   
-        <Splash />
- 
-    );
+  return <Splash />;
 };
 
 export default SplashPage;
