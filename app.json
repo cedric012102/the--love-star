@@ -23,7 +23,7 @@
       "bundleIdentifier": "com.cedric.lovestar",
       "config": {
         "googleSignIn": {
-          "reservedClientId": "com.googleusercontent.apps.156884841393-8p0rjlkv0137jm159oq2ecr34d296dki"
+          "reservedClientId": "com.googleusercontent.apps.659842937776-sgoeqb6ipq5krbj17r1tja3bj7466u4d"
         }
       },
       "googleServicesFile": "./GoogleService-Info-2.plist"
@@ -31,12 +31,22 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#FFFFFF",
+        "config": {
+          "googleSignIn": {
+            "apiKey": "AIzaSyC8CqvVvcXJSVNnV83M4Utmy-rAe0CWmuo",
+            "certificateHash": "EC800D7F61FFD1A0D583E81D87E930E55510CDBA"
+          }
+        }
       },
       "package": "com.cedric.lovestar"
+      // "googleServicesFile": "./google-services.json"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "googleSignIn": {
+        "clientSecret": "-WQyR7OPRRAcciKRbNykRRcH"
+      }
     }
   }
 }

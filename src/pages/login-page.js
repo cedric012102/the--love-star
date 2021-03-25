@@ -15,6 +15,7 @@ import * as AppleAuthentication from "expo-apple-authentication";
 import * as firebase from "firebase";
 import "firebase/auth";
 import { ScrollView } from "react-native-gesture-handler";
+import * as GoogleSignIn from 'expo-google-sign-in';
 
 const LoginPage = ({ navigation }) => {
   const backgroundImage = require("../img/test.jpg");
@@ -55,9 +56,13 @@ const LoginPage = ({ navigation }) => {
 
   async function onGoogleButtonPress() {
     try {
-      const { type, accessToken } = await Google.logInAsync({
-        clientId:
-          "156884841393-8p0rjlkv0137jm159oq2ecr34d296dki.apps.googleusercontent.com",
+      const { type, accessToken } = await GoogleSignIn.initAsync({
+        androidClientId:
+        "659842937776-oms7tnri1r1r1thkjn51j3uol0qfukt3.apps.googleusercontent.com",
+        iosClientId: 
+        "659842937776-sgoeqb6ipq5krbj17r1tja3bj7466u4d.apps.googleusercontent.com",
+        webClientId:
+        "659842937776-as2jqdgq50jcoi6478d03rjkrop6qrpk.apps.googleusercontent.com"
       });
       if (type === "success") {
         const credential = firebase.auth.GoogleAuthProvider.credential(
@@ -66,6 +71,7 @@ const LoginPage = ({ navigation }) => {
 
         // Sign in with credential from the Google.
         await firebase.auth().signInWithCredential(credential);
+        navigation.navigate("OnboardingOne");
       }
     } catch (e) {
       Alert.alert("Sign in failed");

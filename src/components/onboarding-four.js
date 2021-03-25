@@ -3,8 +3,10 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import { styles } from "./styles/onboarding-four-style.js";
 import { AntDesign } from "@expo/vector-icons";
 import { ScrollView } from "react-native-gesture-handler";
+import { useNavigation } from "@react-navigation/native";
 
-export function OnboardingFour({ navigation }) {
+export function OnboardingFour() {
+  const navigation = useNavigation();
   return (
     <ScrollView style={styles.backgroundOnboarding}>
       <View style={styles.onboardingContainer}>

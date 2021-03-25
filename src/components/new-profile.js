@@ -68,16 +68,16 @@ export function NewProfile() {
   }
 
   function onUploadImage(result){
-     // Upload image to Firebase
-      // firebase
-      // .storage()
-      // .ref(imageName)
-      // .putFile(uploadUri)
-      // .then((snapshot) => {
-      //   //You can check the image is now uploaded in the storage bucket
-      //   console.log(`${imageName} has been successfully uploaded.`);
-      // })
-      // .catch((e) => console.log('uploading image error => ', e));
+    //  Upload image to Firebase
+    //   firebase
+    //   .storage()
+    //   .ref(imageName)
+    //   .putFile(uploadUri)
+    //   .then((snapshot) => {
+    //     //You can check the image is now uploaded in the storage bucket
+    //     console.log(`${imageName} has been successfully uploaded.`);
+    //   })
+    //   .catch((e) => console.log('uploading image error => ', e));
       setPhoto(result);
   }
 }
