@@ -8,7 +8,7 @@
     "facebookScheme": "fb361404388737946",
     "facebookAppId": "361404388737946",
     "facebookDisplayName": "love star",
-    "facebookAutoInitEnabled": "true",
+    "facebookAutoInitEnabled": true,
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -26,21 +26,21 @@
           "reservedClientId": "com.googleusercontent.apps.659842937776-sgoeqb6ipq5krbj17r1tja3bj7466u4d"
         }
       },
-      "googleServicesFile": "./GoogleService-Info-2.plist"
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF",
-        "config": {
-          "googleSignIn": {
-            "apiKey": "AIzaSyC8CqvVvcXJSVNnV83M4Utmy-rAe0CWmuo",
-            "certificateHash": "EC800D7F61FFD1A0D583E81D87E930E55510CDBA"
-          }
+      },
+      "config": {
+        "googleSignIn": {
+          "apiKey": "AIzaSyC8CqvVvcXJSVNnV83M4Utmy-rAe0CWmuo",
+          "certificateHash": "EC800D7F61FFD1A0D583E81D87E930E55510CDBA"
         }
       },
-      "package": "com.cedric.lovestar"
-      // "googleServicesFile": "./google-services.json"
+      "package": "com.cedric.lovestar",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png",

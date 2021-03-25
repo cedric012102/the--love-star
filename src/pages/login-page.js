@@ -9,7 +9,6 @@ import {
 } from "react-native";
 import styles from "./styles/login-page-style";
 import { PrimaryButton } from "../components/primary-button";
-import * as Google from "expo-google-app-auth";
 import * as Facebook from "expo-facebook";
 import * as AppleAuthentication from "expo-apple-authentication";
 import * as firebase from "firebase";
@@ -74,6 +73,7 @@ const LoginPage = ({ navigation }) => {
         navigation.navigate("OnboardingOne");
       }
     } catch (e) {
+      console.log(e);
       Alert.alert("Sign in failed");
     }
   }

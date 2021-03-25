@@ -20,7 +20,7 @@ const Stack = createStackNavigator();
 
 export default function App() {
   const user = firebase.auth().currentUser;
-  const isLoggedIn = user !== null;
+  const isLoggedIn = user !== null
 
   return (
     <NavigationContainer>
