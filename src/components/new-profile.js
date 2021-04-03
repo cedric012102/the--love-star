@@ -81,3 +81,34 @@ export function NewProfile() {
       setPhoto(result);
   }
 }
+
+// import React, { useContext, useEffect, useRef, useState } from "react";
+// import { View, Text, TouchableOpacity, Image, ActionSheetIOS } from "react-native";
+// import { styles } from "./styles/new-profile-style";
+// import { useNavigation } from "@react-navigation/native";
+// import * as ImagePicker from "expo-image-picker";
+// import { Platform } from "react-native";
+// import { Camera } from "expo-camera";
+// import * as firebase from 'firebase';
+
+// export function NewProfile() {
+//   const navigation = useNavigation();
+//   const [photo, setPhoto] = useState(null);
+//   const cameraRef = useRef(null);
+
+//   return (
+//     <View style={styles.backgroundProfile}>
+//       <View style={styles.profileContainer}>
+//         <Text style={styles.profileText}>Profile Name</Text>
+//         <TouchableOpacity onPress={() => navigation.navigate('CameraUpload')}>
+//           <Image source={photo} style={styles.profileIcon} />
+//         </TouchableOpacity>
+//       </View>
+
+      
+//     </View>
+//   );
+
+  
+
+// }

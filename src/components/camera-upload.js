@@ -4,6 +4,8 @@ import { styles } from "./styles/camera-upload-style.js";
 import { Camera } from "expo-camera";
 import * as ImagePicker from "expo-image-picker";
 import { useNavigation } from "@react-navigation/native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 
 export function CameraUpload() {
   const navigation = useNavigation();
@@ -74,6 +76,7 @@ export function CameraUpload() {
       ></Button>
       <Button title="Take Picture" onPress={() => takePicture()} />
       <Button title="Pick Image From Gallery" onPress={() => pickImage()} />
+      <Button title="Save" onPress={() => navigation.navigate('Save', {image})} />
       {image && <Image source={{ uri: image }} style={{ flex: 1 }} />}
     </View>
   );

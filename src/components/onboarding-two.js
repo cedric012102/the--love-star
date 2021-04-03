@@ -69,7 +69,7 @@ export function OnboardingTwo() {
         </Text>
 
         <TouchableOpacity
-          onPress={() => navigation.navigate("OnboardingFour")}
+          onPress={() => navigation.navigate("OnboardingThree")}
         >
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonContainerText}>Continue</Text>

@@ -15,6 +15,7 @@ import UploadPageTwo from "./src/pages/upload-two-page";
 import UploadPage from "./src/pages/upload-page";
 import HomePage from "./src/pages/home-page";
 import CameraUploadPage from "./src/pages/camera-upload-page";
+import SavePage from "./src/pages/save-page";
 
 const Stack = createStackNavigator();
 
@@ -70,6 +71,7 @@ export default function App() {
         <Stack.Screen name="CameraUpload" component={CameraUploadPage} />
         <Stack.Screen name="Upload" component={UploadPage} />
         <Stack.Screen name="UploadTwo" component={UploadPageTwo} />
+        <Stack.Screen name="Save" component={SavePage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
